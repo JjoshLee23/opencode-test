@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Joshua Lee — Data Scientist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Skip navigation link for keyboard users -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="page-header" aria-label="Page header">
+    <div class="hero">
+      <div class="avatar">JL</div>
+      <h1>Joshua Lee</h1>
+      <p class="tagline">Data Scientist</p>
+    </div>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions" aria-label="Actions">
+      <button id="theme-toggle" aria-pressed="false" aria-label="Toggle dark mode">🌓</button>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <h3><a href="https://github.com/JjoshLee23/ETF-Portfolio-Optimization" target="_blank" rel="noopener">ETF Portfolio Optimization</a></h3>
+          <p>Built an ETF portfolio optimization framework in Python comparing 7 allocation strategies (Equal Weight, Mean-Variance, Ridge Regression, LightGBM, XGBoost, LSTM) across 10 diversified ETFs. Engineered 20+ financial features with no-look-ahead backtesting, realistic transaction costs, and train/validation/test splits. Compared strategy performance across risk-adjusted return and downside risk metrics; Mean-Variance Optimization achieved a 2.13 Sharpe ratio versus 1.50 for the Equal Weight benchmark.</p>
+        </article>
+
+        <article class="project-card">
+          <h3><a href="https://github.com/JjoshLee23/Epidemic-Engine-Event-Generator" target="_blank" rel="noopener">Epidemic Engine Event Generator</a></h3>
+          <p>Architected an end-to-end health data pipeline on OpenShift, ingesting 50K+ synthetic events/hour through Apache Kafka, NiFi, Spark, and PostgreSQL with under 60-second latency from ingestion to dashboard visualization. Implemented Spark Structured Streaming to compute rolling regional aggregates across 100+ regions, powering anomaly detection (z-score) and multi-metric alerting with reduced false positives. Implemented outbreak prediction by training and monitoring 3 ML models (Linear Regression, Random Forest, Gradient Boosting), sending RMSE/MAE metrics to PostgreSQL and visualizing real-time model performance in Grafana.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <h2 class="section-title">Professional Experience</h2>
+
+      <div class="timeline">
+        <div class="item">
+          <div class="meta">
+            <strong>EY (Ernst & Young)</strong>
+            <span>Technology Consulting Intern</span>
+            <span>Jun 2026 – Aug 2026</span>
+          </div>
+          <p>New York City, NY</p>
+          <p>Analyzed anti-money laundering monitoring workflows to trace data across systems, identifying data quality issues that could affect the detection of suspicious transactions. Developed SQL analyses across 10,000+ transaction records to evaluate AML alert generation and determine whether monitoring results met the client's 5% control threshold using statistical testing. Evaluated BERT and keyword-based NLP techniques for detecting potentially suspicious terms in person-to-person (P2P) and Automated Clearing House (ACH) payment messages, assessing detection effectiveness and model reliability.</p>
+        </div>
+
+        <div class="item">
+          <div class="meta">
+            <strong>National Grid</strong>
+            <span>Data Analyst Intern</span>
+            <span>May 2025 – Aug 2025</span>
+          </div>
+          <p>Waltham, MA</p>
+          <p>Leveraged Power Query, Python scripts, and a Salesforce database to develop 5+ interactive Power BI dashboards to monitor advanced metering infrastructure (AMI) performance, improving operations by 20%. Automated data extraction and transformation processes from high-volume Salesforce API calls using Power Automate to present meter availability across Massachusetts, reducing data retrieval time by more than half.</p>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <div class="meta">
+          <strong>Boston University Center for Computing and Data Sciences</strong>
+          <span>Environmental Data Science Researcher</span>
+          <span>Jan 2026 – May 2026</span>
+        </div>
+        <p>Analyzed the impact of wind perturbations on California atmospheric river forecasts using NVIDIA's FourCastNet3 model, evaluating forecast accuracy and model sensitivity.</p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-tags">
+        <span class="skill-tag">Python (NumPy, Matplotlib, scikit-learn, SciPy, Seaborn, Pandas, BeautifulSoup, PyTorch)</span>
+        <span class="skill-tag">SQLite, PostgreSQL, MongoDB</span>
+        <span class="skill-tag">Rust, Java</span>
+        <span class="skill-tag">Git / GitHub</span>
+        <span class="skill-tag">JMP, VBA Excel</span>
+        <span class="skill-tag">RStudio, Power BI, Power Query</span>
+        <span class="skill-tag">Docker, Kubernetes, OpenShift</span>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-box">
+        <p>Boston, MA</p>
+        <p><a href="mailto:leejosh@bu.edu">leejosh@bu.edu</a></p>
+        <p>(650) 720-3397</p>
+        <p><a href="https://www.linkedin.com/in/jjlee23" target="_blank" rel="noopener">linkedin.com/in/jjlee23</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Joshua Lee · All rights reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
